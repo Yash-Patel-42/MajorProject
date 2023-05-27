@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Weather App</h1>
+        <div>
+            <input type="text" id="input" placeholder="Enter city name...">
+            <button id="search">Search</button>
+        </div>
+    </div>
+
+    <div id="dt">
+        <h4>Date
+        <script type="text/javascript">
+            var currentTime = new Date()
+            var month = currentTime.getMonth() + 1
+            var day = currentTime.getDate()
+            var year = currentTime.getFullYear()
+            document.write(month + "/" + day + "/" + year)
+        </script></h4>
+        <div class="divider"></div>
+        <h4>Time
+            <script type="text/javascript">
+                var currentTime = new Date()
+                var hours = currentTime.getHours()
+                var minutes = currentTime.getMinutes()
+                if (minutes < 10){
+                    minutes = "0" + minutes
+                }
+                document.write(hours + ":" + minutes + " ")
+                if(hours > 11){
+                    document.write("PM")
+                } else {
+                    document.write("AM")
+                }
+            </script></h4>
+    </div>
+
+    <main>
+        <div class="weather">
+            <h2 id="city">Delhi, IN</h2>
+            <div class="temp-box">
+                <img src="https://i.pinimg.com/originals/77/0b/80/770b805d5c99c7931366c2e84e88f251.png" alt="" id="img">
+                <div>
+                <p id="t">Temperature
+                <span id="temperature">26 °C</span><i id="ticon" class="bi bi-thermometer"></i></p>
+                </div>
+            
+                <div class="hum">
+                    <div class="text">
+                        <p id="h">Humidity
+                        <span id="humidity">45%</span><i id="hicon" class="bi bi-moisture"></i></p>   
+                    </div>
+                 </div>
+        
+                <div class="win">
+                    <div class="text">
+                        <p id="ws">Wind Speed
+                        <span id="windspeed">2.57Km/H</span><i id="wsicon" class="bi bi-wind"></i></p>
+                    </div>
+                </div>
+            </div>
+            <span id="clouds">Broken Clouds</span>
+        </div>
+
+        <div class="divider1"></div>
+
+        <div class="forecastH">
+            <p class="cast-header">Upcoming Forecast</p> 
+            <div class="templist">
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 25°C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+                
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 25°C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+                
+
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 25°C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+                
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 25°C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+                
+                <div class="next">
+                    <div>
+                        <p class="time">8:30 PM</p>
+                        <p>29 °C / 25°C</p>
+                    </div>
+                    <p class="desc">Light Rain</p>
+                </div>
+                
+            </div>  
+        </div>
+    </main>
+
+    <div class="forecstD">
+        <div class="divider2"></div>
+        <p class="cast-header">Next Days Forecast</p>
+        <div class="weekF">
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 25°C</p>
+                <p class="desc">Overcst Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 25°C</p>
+                <p class="desc">Overcst Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 25°C</p>
+                <p class="desc">Overcst Clouds</p>
+            </div>
+
+            <div class="dayF">
+                <p class="date">Sun Jul 03 2022</p>
+                <p>31 °C / 25°C</p>
+                <p class="desc">Overcst Clouds</p>
+            </div>
+
+            
+        </div>
+    </div>
+    <footer id="footer" align="center">Developed & Designed by Yash Patel</footer>
+
+    <script src="weather.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+html{
+  height: 100%;
+}
+body{
+  padding: 1rem 5rem;
+  font-family: 'Roboto',sans-serif;
+  background: linear-gradient(45deg, rgba(183,204,246,0.7), rgba(7,43,127,067)),url("https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg");
+  background-size: 100% 890px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: cover;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1{
+  color: rgb(214, 147, 45);
+  text-decoration: underline;
+  font-family: 'Orbitron',sans-serif;
+}
+#input{
+  font-size: 18px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  background: aliceblue;
+}
+#search{
+  background: cadetblue;
+  padding: 5px 20px;
+  color: aliceblue;
+  outline: none;
+  font-size: 17px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+}
+main{
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+  grid-column-gap: 25px;
+  align-items: center;
+  /* margin: 0 50px; */
+  color: aliceblue;
+}
+.weather{
+  text-align: left;
+  color: aliceblue;
+}
+#city{
+  font-size: 30px;
+}
+.weather img{
+  width: 120px;
+  height: 120px;
+  border: 5px solid white;
+  /* margin-left: 40px; */
+  /* border-radius: 50%; */
+  /* background: rgba(240, 248, 255, 0.4); */
+}
+#temperature{
+  font-size: 25px;
+  margin: 0;
+  margin-left: 40px;
+  
+}
+.temp-box, .hum, .win{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.temp-box{
+  margin: 30px 0;
+}
+#clouds{
+  font-size: 20px;
+  background: rgba(153, 205, 50,0.75);
+  padding: 2px 20px;
+  border-radius: 15px;
+  text-transform: capitalize;
+  justify-content: center;
+}
+.next{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.next p{
+  margin: 3px 0;
+}
+.cast-header{
+  color: aliceblue;
+  background: rgba(254, 189, 132, 0.5);
+  width: max-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.time, .date{
+  color: rgb(254, 189, 132);
+  font-weight: 600;
+}
+.desc, .description{
+  color: rgb(196, 255, 77);
+  text-transform: capitalize;
+}
+.divider1, .divider2{
+  background: rgba(254, 189, 132, 0.5);
+  height: 200px;
+  border-radius: 5px;
+}
+.divider2{
+  background: rgba(254, 189, 132, 0.5);
+  border-radius: 5px;
+  height: 5px;
+  width: 0%;
+  
+}
+.forecstD{
+  margin: 20px 50px;
+  color: aliceblue;
+}
+.weekF{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+#humidity{
+  margin-left: 25px;
+  font-size: 25px;
+  
+}
+#windspeed{
+  margin-left: 15px;
+  font-size: 25px;
+}
+#t, #w, #ws{
+  margin-left: 30px;
+  font-size: 25px;
+}
+#h{
+  font-size: 25px;
+  margin-left: 30px;
+}
+#dt{
+  display: flex;
+   color: aliceblue;
+   font-size: 25px;
+   width: 455px;
+}
+.divider{
+  width: 50px;
+}
+#wsicon{
+  margin-left: 50px;
+  font-size: 40px;
+  color: goldenrod;
+}
+#hicon{
+  margin-left: 30px;
+  font-size: 40px;
+  color: goldenrod;
+}
+#ticon{
+  margin-left: 45px;
+  font-size: 40px;
+  color: goldenrod;
+}
+footer{
+  text-align: center;
+  color: rgb(2, 42, 122);
+  font-size: 25px;
+  text-shadow: 8px lightblue; 
+}
